@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ethers } from "ethers";
+// import { ethers } from "ethers";
 import "./App.scss";
 
 export default function App() {
