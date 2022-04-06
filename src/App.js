@@ -196,9 +196,9 @@ export default function App() {
         />
         <button className="waveButton" onClick={wave}>
           <span role="img" aria-label="wave">
-            👋
+            🔔
           </span>
-          Wave at Me
+          Send a notice
         </button>
         {!currentAccount && (
           <button className="waveButton" onClick={connectWallet}>
