@@ -24,7 +24,7 @@ export default function App() {
         const wavePortalContract = new ethers.Contract(
           contractAddress,
           contractABI,
-          signer
+          signer,
         );
         const waves = await wavePortalContract.getAllWaves();
 
@@ -70,7 +70,7 @@ export default function App() {
       wavePortalContract = new ethers.Contract(
         contractAddress,
         contractABI,
-        signer
+        signer,
       );
       wavePortalContract.on("NewWave", onNewWave);
     }
@@ -136,7 +136,7 @@ export default function App() {
         const wavePortalContract = new ethers.Contract(
           contractAddress,
           contractABI,
-          signer
+          signer,
         );
 
         let count = await wavePortalContract.getTotalWaves();
@@ -172,12 +172,12 @@ export default function App() {
             alt="Computer man"
             style={{ width: "72px", height: "72px" }}
           />
-          <span>Hey there!</span>
+          <span>Bulletin Board</span>
         </div>
 
         <div className="bio">
           This is Subhankar and I'm learning to build Web3 apps, pretty cool
-          right? Connect your Ethereum wallet and wave at me!
+          right? Connect your Ethereum wallet and drop a notice!
         </div>
         <input
           style={{
