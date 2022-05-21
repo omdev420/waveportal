@@ -172,12 +172,12 @@ export default function App() {
             alt="Computer man"
             style={{ width: "72px", height: "72px" }}
           />
-          <span>Bulletin Board</span>
+          <span>Art Gallery</span>
         </div>
 
         <div className="bio">
           This is Subhankar and I'm learning to build Web3 apps, pretty cool
-          right? Connect your Ethereum wallet and drop a notice!
+          right? Connect your Ethereum wallet and drop an art!
         </div>
         <input
           style={{
@@ -198,7 +198,7 @@ export default function App() {
           <span role="img" aria-label="wave">
             🔔
           </span>
-          Send a notice
+          Send your work!
         </button>
         {!currentAccount && (
           <button className="waveButton" onClick={connectWallet}>
@@ -228,7 +228,12 @@ export default function App() {
                     timeStyle="round"
                   />
                 </div>
-                <div>Message: {wave.message}</div>
+                <div><center><img style={{
+                  border: "1px solid white",
+                  borderRadius: "5px",
+                  marginTop: "16px",
+                  padding: "8px",
+                }} src={wave.message} height="250"></img></center></div>
               </div>
             );
           })
